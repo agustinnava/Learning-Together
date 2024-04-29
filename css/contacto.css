@@ -1,0 +1,833 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    background-image: url(../img/contact.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+}
+h2{
+    padding: 8%;
+    font-size: 4em;
+    visibility: hidden;
+}
+.slider img{
+    width: 100%;
+    height: auto;
+}
+.item img{
+    width: 50px;
+}
+.contacto_main{
+    margin-top: 2em;
+}
+.contacto_main article{
+    color: #333;
+    font-family: "Montserrat",sans-serif; 
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.consulta h3{
+    text-align: center;
+    font-size: 3em;
+    color: gold;
+    margin: 0.5em;
+}
+.datos h3{
+    text-align: center;
+    font-size: 3em;
+    color: gold;
+    margin: 0.5em;
+}
+.contacto_main input, textarea{
+    border: none;
+    text-align: start;
+    padding: 1em;
+}
+.contacto_main label{
+    margin-top: 1em;
+    position: relative;
+}
+.contacto_main input{
+    display: block;
+    margin: 1em auto;
+    font-size: 15px;
+    width: 70%;
+    border: 2px solid darkgray;
+}
+.contacto_main textarea{
+    display: block;
+    margin: 0.5em auto;
+    border: 2px solid darkgray;
+    border-radius: 2em;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.contacto_main input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+.boton2{
+    display: block;
+    margin: auto;
+}
+.datos{
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.datos p{
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+.waiting{
+    background-color: #30bcff;
+    position: relative;
+}
+.waiting h3{
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    top: 15%;
+}
+.ubicacion iframe{
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+.datos-contenido{
+    display: flex;
+    margin: 2em auto;
+    flex-wrap: nowrap;
+    width: 90%;
+    padding: 2em;
+    border-radius: 3em;
+    border: 1px solid #30bcff;
+    box-shadow: 0px 10px 25px rgb(48 188 255 / 30%);
+}
+.datos h4{
+    text-align: start;
+    font-size: 2.5em;
+    font-family: montserrat, sans-serif;
+    color: #000637;
+    font-weight: 600;
+    margin: 0;
+}
+.tel{
+    background-color: #ff5e79;
+    box-shadow: 0px 8px 16px rgb(255 94 121 / 30%);
+    width: 70px;
+    margin-right: 1.5em;
+    height: auto;
+}
+.mail{
+    background-color: #30bcff;
+    box-shadow: 0px 8px 16px rgb(48 188 255 / 30%);
+    width: 70px;
+    height: auto;
+    margin-right: 1.5em;
+}
+.dir{
+    background-color: #ffb62a;
+    box-shadow: 0px 8px 16px rgb(255 182 42 / 30%);
+    width: 70px;
+    height: auto;
+    margin-right: 1.5em;
+}
+input.error, textarea.error{
+    border: 1px solid crimson;
+}
+.error{
+    color: crimson;
+}
+.contador{
+    text-align: end;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeconsulta p{
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    font-family: sans-serif;
+    color: crimson;
+}
+#caracteresactuales, #caracteresrestantes{
+   display: inline-block;
+}
+#popup{
+    position: fixed;
+    text-align: center;
+    padding: 1em;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    border: 2px solid black;
+    background-color: seashell;
+    z-index: 10;
+    border-radius: 2em;
+    border: none;
+}
+#popup img{
+    max-width: 50%;
+    height: auto;
+}
+.exito{
+    text-align: center;
+    font-size: 2em;
+    color: limegreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.detalle{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+#cerrar{
+    display: block;
+    margin: auto;
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+body{
+    font-size: 80%;
+}
+.banner{
+    background-size: cover;
+}
+.contacto_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 1em;
+}
+.contacto_main article{
+    width: calc(50%);
+}
+.boton2{
+    display: inline;
+}
+.consulta h3{
+    font-size: 2em;
+    margin: 0.5em 1em;
+}
+.datos h3{
+    font-size: 2em;
+    margin: 0.5em 1em;
+}
+.contacto_main input{
+    display: block;
+    margin: 1em auto;
+    font-size: 15px;
+    width: 70%;
+    border: 2px solid darkgray;
+}
+.contacto_main textarea{
+    display: block;
+    margin: 0.5em auto;
+    border: 2px solid darkgray;
+    border-radius: 2em;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.contacto_main input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+.boton_position2{
+    text-align: right;
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+.datos{
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.datos p{
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+.waiting{
+    background-color: #30bcff;
+    position: relative;
+}
+.waiting h3{
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    top: 15%;
+}
+.ubicacion iframe{
+    width: 90%;
+    height: 300px;
+}
+.datos-contenido{
+    display: flex;
+    margin: 2em auto;
+    flex-wrap: nowrap;
+    width: 90%;
+    padding: 1.5em;
+    border-radius: 3em;
+    border: 1px solid #30bcff;
+    box-shadow: 0px 10px 25px rgb(48 188 255 / 30%);
+}
+.datos h4{
+    font-size: 1.5em;
+}
+.tel{
+    width: 50px;
+    margin-right: 1.5em;
+    height: auto;
+}
+.mail{
+    width: 50px;
+    height: auto;
+    margin-right: 1.5em;
+}
+.dir{
+    width: 50px;
+    height: auto;
+    margin-right: 1.5em;
+}
+input.error, textarea.error{
+    border: 1px solid crimson;
+}
+.contador{
+    text-align: end;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeconsulta p{
+    font-size: 1em;
+}
+#caracteresactuales, #caracteresrestantes{
+   display: inline-block;
+}
+#popup{
+    position: fixed;
+    text-align: center;
+    padding: 1em;
+    top: 15%;
+    left: 20%;
+    width: 65%;
+    border: 2px solid black;
+    background-color: seashell;
+    z-index: 10;
+    border-radius: 2em;
+    border: none;
+}
+#popup img{
+    max-width: 50%;
+    height: auto;
+}
+.exito{
+    text-align: center;
+    font-size: 2.5em;
+    color: limegreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.detalle{
+    text-align: center;
+    font-size: 1.7em;
+    margin: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+body{
+    font-size: 90%;
+}
+.banner{
+    background-size: cover;
+}
+.contacto_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2em;
+}
+.contacto_main article{
+    width: calc(50%);
+}
+.boton2{
+    display: inline;
+}
+.consulta h3{
+    font-size: 2.5em;
+    margin: 0.5em 1em;
+}
+.consulta{
+    border-radius: 2em;
+    padding: 2em 0em;
+    box-shadow: 0px 0px 20px 10px rgb(48 188 255 / 30%);
+}
+.datos h3{
+    font-size: 2.5em;
+    margin: 0.5em 1em;
+}
+.contacto_main input{
+    display: block;
+    margin: 1.5em auto;
+    font-size: 15px;
+    width: 60%;
+    border: 2px solid darkgray;
+}
+.contacto_main textarea{
+    display: block;
+    margin: 0.5em auto;
+    border: 2px solid darkgray;
+    border-radius: 2em;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.contacto_main input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+.boton_position2{
+    text-align: right;
+    margin-top: 1em;
+    font-size: 0.9em;
+    padding-right: 3em;
+}
+.datos{
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.datos p{
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+.waiting{
+    background-color: #30bcff;
+    position: relative;
+}
+.waiting h3{
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    top: 15%;
+}
+.ubicacion iframe{
+    width: 90%;
+    height: 300px;
+    margin-bottom: 2em;
+}
+.datos-contenido{
+    display: flex;
+    margin: 2em auto;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 1.5em;
+    border-radius: 3em;
+    border: 1px solid #30bcff;
+    box-shadow: 0px 10px 25px rgb(48 188 255 / 30%);
+}
+.datos h4{
+    font-size: 1.5em;
+}
+.tel{
+    width: 50px;
+    margin-right: 1.5em;
+    height: auto;
+}
+.mail{
+    width: 50px;
+    height: auto;
+    margin-right: 1.5em;
+}
+.dir{
+    width: 50px;
+    height: auto;
+    margin-right: 1.5em;
+}
+input.error, textarea.error{
+    border: 1px solid crimson;
+}
+.contador{
+    text-align: end;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeconsulta p{
+    font-size: 1em;
+}
+#caracteresactuales, #caracteresrestantes{
+   display: inline-block;
+}
+#popup{
+    position: fixed;
+    text-align: center;
+    padding: 1em;
+    top: 10%;
+    left: 27%;
+    width: 45%;
+    border: 2px solid black;
+    background-color: seashell;
+    z-index: 10;
+    border-radius: 2em;
+    border: none;
+}
+#popup img{
+    max-width: 50%;
+    height: auto;
+}
+.exito{
+    text-align: center;
+    font-size: 2.5em;
+    color: limegreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.detalle{
+    text-align: center;
+    font-size: 1.7em;
+    margin: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+body{
+    font-size: 100%;
+}
+h2{
+    font-size: 5em;
+}
+.banner{
+    background-size: cover;
+}
+.contacto_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 2em;
+}
+.contacto_main article{
+    width: calc(50%);
+}
+.boton2{
+    display: inline;
+}
+.consulta h3{
+    font-size: 2.5em;
+    margin: 0.5em 1em;
+}
+.consulta{
+    border-radius: 2em;
+    padding: 2em 0em;
+    box-shadow: 0px 0px 20px 10px rgb(48 188 255 / 30%);
+}
+.datos h3{
+    font-size: 2.5em;
+    margin: 0.5em 1em;
+}
+.contacto_main input{
+    display: block;
+    margin: 1.5em auto;
+    font-size: 15px;
+    width: 60%;
+    border: 2px solid darkgray;
+}
+.contacto_main textarea{
+    display: block;
+    margin: 0.5em auto;
+    border: 2px solid darkgray;
+    border-radius: 2em;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.contacto_main input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+.boton_position2{
+    text-align: right;
+    margin-top: 1em;
+    font-size: 0.9em;
+    padding-right: 3em;
+}
+.datos{
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.datos p{
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+.waiting{
+    background-color: #30bcff;
+    position: relative;
+}
+.waiting h3{
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    top: 15%;
+}
+.ubicacion iframe{
+    width: 90%;
+    height: 300px;
+    margin-bottom: 2em;
+}
+.datos-contenido{
+    display: flex;
+    margin: 2em auto;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 1.5em;
+    border-radius: 3em;
+    border: 1px solid #30bcff;
+    box-shadow: 0px 10px 25px rgb(48 188 255 / 30%);
+}
+.datos h4{
+    font-size: 1.5em;
+}
+.tel{
+    width: 50px;
+    margin-right: 1.5em;
+    height: auto;
+}
+.mail{
+    width: 50px;
+    height: auto;
+    margin-right: 1.5em;
+}
+.dir{
+    width: 50px;
+    height: auto;
+    margin-right: 1.5em;
+}
+input.error, textarea.error{
+    border: 1px solid crimson;
+}
+.contador{
+    text-align: end;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeconsulta p{
+    font-size: 1em;
+}
+#caracteresactuales, #caracteresrestantes{
+   display: inline-block;
+}
+#popup{
+    position: fixed;
+    text-align: center;
+    padding: 1em;
+    top: 10%;
+    left: 27%;
+    width: 45%;
+    border: 2px solid black;
+    background-color: seashell;
+    z-index: 10;
+    border-radius: 2em;
+    border: none;
+}
+#popup img{
+    max-width: 50%;
+    height: auto;
+}
+.exito{
+    text-align: center;
+    font-size: 2.5em;
+    color: limegreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.detalle{
+    text-align: center;
+    font-size: 1.7em;
+    margin: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+}
+@media screen and (min-width: 1200px){
+body{
+    font-size: 100%;
+}
+.banner{
+    background-size: cover;
+}
+.contacto_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 3em 2em;
+}
+.contacto_main article{
+    width: calc(50%);
+    margin: 0em 2em;
+}
+.boton2{
+    display: inline;
+}
+.consulta h3{
+    font-size: 3.5em;
+    margin: 0.5em 1em;
+}
+.consulta{
+    border-radius: 2em;
+    padding: 2em 0em;
+    box-shadow: 0px 0px 20px 10px rgb(48 188 255 / 30%);
+}
+.datos h3{
+    font-size: 3.5em;
+    margin: 0.5em 1em;
+}
+.contacto_main input{
+    display: block;
+    margin: 1em auto;
+    font-size: 1.3em;
+    width: 60%;
+    border: 2px solid darkgray;
+}
+.contacto_main textarea{
+    display: block;
+    padding: 2em;
+    margin: 0.5em auto;
+    border: 2px solid darkgray;
+    border-radius: 2em;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+.contacto_main input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+.boton_position2{
+    text-align: right;
+    margin-top: 1em;
+    font-size: 0.9em;
+    padding-right: 3em;
+}
+.datos{
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.datos p{
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+.waiting{
+    background-color: #30bcff;
+    position: relative;
+}
+.waiting h3{
+    font-size: 120px;
+    color: white;
+    position: absolute;
+    top: 15%;
+}
+.ubicacion iframe{
+    width: 90%;
+    height: 500px;
+    margin-bottom: 2em;
+}
+.datos-contenido{
+    display: flex;
+    margin: 2em auto;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 2em;
+    border-radius: 3em;
+    border: 1px solid #30bcff;
+    box-shadow: 0px 10px 25px rgb(48 188 255 / 30%);
+}
+.datos h4{
+    font-size: 2em;
+}
+.tel{
+    width: 100px;
+    margin-right: 1.5em;
+    height: auto;
+}
+.mail{
+    width: 100px;
+    height: auto;
+    margin-right: 1.5em;
+}
+.dir{
+    width: 100px;
+    height: auto;
+    margin-right: 1.5em;
+}
+input.error, textarea.error{
+    border: 1px solid crimson;
+}
+.contador{
+    text-align: end;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeconsulta p{
+    font-size: 1.2em;
+}
+#caracteresactuales, #caracteresrestantes{
+   display: inline-block;
+}
+#popup{
+    position: fixed;
+    text-align: center;
+    padding: 1em;
+    top: 15%;
+    left: 30%;
+    width: 40%;
+    border: 2px solid black;
+    background-color: seashell;
+    z-index: 10;
+    border-radius: 2em;
+    border: none;
+}
+#popup img{
+    max-width: 40%;
+    height: auto;
+}
+.exito{
+    text-align: center;
+    font-size: 3em;
+    color: limegreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.detalle{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+#cerrar{
+    display: block;
+    margin: auto;
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+}

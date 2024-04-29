@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    background-color: #EFF8FF;
+    font-size: 70%;
+}
+.banner{
+    position: relative;
+    background-image: url(../img/banner_inscripcion.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;   
+}
+h2{
+    display: block;
+    padding: 8%;
+    text-align: center;
+    font-size: 4em;
+    font-family: montserrat, sans-serif;
+    color: #ffd700;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 0em;
+}
+.descripcion_ins{
+    margin: 3em 0em;
+}
+.descripcion_ins p{
+    font-size: 1.7em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+.negrita{
+    font-weight: bolder;
+}
+.boton_position2{
+    text-align: center;
+    font-size: 1.5em
+}
+label{
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    border-radius: 3em;
+    padding: 0.5em;
+    background-color: #2D9999;
+    color: white;
+}
+article{
+    margin: 0em 3em;
+    margin-bottom:20px;
+}
+input{
+    text-align: start;
+    padding-left: 2em;
+    width: 70%;
+    margin: auto;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+input.error{
+    border:2px solid crimson;
+}
+.error{
+    color: crimson;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeprovincia p, #mensajeciudad p{
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0.5em 0em;
+    font-family: sans-serif;
+    color: crimson;
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+body{
+    font-size: 80%;
+}
+h2{
+    font-size: 5em;
+}
+.descripcion_ins{
+    margin: 3em 0em;
+}
+.descripcion_ins p{
+font-size: 1.7em;
+text-align: center;
+color: #333;
+}
+.boton_position2{
+    text-align: center;
+    font-size: 1.5em
+}
+label{
+    width: 60%;
+    border-radius: 3em;
+    padding: 0.5em;
+}
+.contenedor{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.contenedor div{
+	box-sizing: border-box;
+    width: calc(50% - 10px);
+}
+input{
+    padding-left: 1em;
+    width: 80%;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeprovincia p, #mensajeciudad p{
+    display: block;
+    font-size: 1.3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    color: crimson;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+body{
+    font-size: 90%;
+}
+h2{
+    font-size: 5em;
+}
+.descripcion_ins{
+    margin: 3em 0em;
+}
+.descripcion_ins p{
+    font-size: 1.7em;
+}
+.boton_position2{
+    text-align: center;
+    font-size: 1.5em
+}
+label{
+    width: 60%;
+    border-radius: 3em;
+    padding: 0.5em;
+}
+.contenedor{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.contenedor div{
+	box-sizing: border-box;
+    width: calc(50% - 10px);
+}
+input{
+    padding-left: 1em;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeprovincia p, #mensajeciudad p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+body{
+    font-size: 100%;
+}
+h2{
+    font-size: 5em;
+}
+.descripcion_ins{
+    margin: 3em 0em;
+}
+.descripcion_ins p{
+    font-size: 1.7em;
+}
+.boton_position2{
+    text-align: center;
+    font-size: 1.5em
+}
+label{
+    width: 60%;
+    border-radius: 3em;
+    padding: 0.5em;
+}
+.contenedor{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.contenedor div{
+	box-sizing: border-box;
+    width: calc(50% - 10px);
+}
+input{
+    padding-left: 1em;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #2D9999;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeprovincia p, #mensajeciudad p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+}
+@media screen and (min-width: 1200px){
+body{
+    font-size: 100%;
+}
+.banner{
+    height: auto;   
+}
+h2{
+    padding: 8%;
+    font-size: 7em;
+    margin-top: 0em;
+}
+.descripcion_ins{
+    margin: 3em 0em;
+}
+.descripcion_ins p{
+    font-size: 1.7em;
+    text-align: center;
+    color: #333;    
+}
+.boton_position2{
+    text-align: center;
+    font-size: 1.5em
+}
+label{
+    text-align: center;
+    display: block;
+    width: 45%;
+    margin: auto;
+    border-radius: 3em;
+    padding: 0.5em;
+    background-color: #2D9999;
+    color: white;
+}
+.contenedor{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+.contenedor div{
+	box-sizing: border-box;
+    width: calc(50% - 10px);
+}
+input{
+    width: 60%;
+    margin: 1em auto;
+}
+#mensajenombre p, #mensajeapellido p, #mensajeemail p, #mensajetel p, #mensajeprovincia p, #mensajeciudad p{
+    display: block;
+    font-size: 1.3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    color: crimson;
+}
+}
